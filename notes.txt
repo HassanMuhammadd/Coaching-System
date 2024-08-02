@@ -1,0 +1,6 @@
+=> User {name, age, weight, email, password, avatar }
+=> Coach {name, description, price, reviews[id], avatar, averageRating, email, password, createdAt }
+	Subscription {userID, coachID, price, duration, workoutPlan{[dayNum:number, exercise: Exercise | rest ]}, DietPlan{[mealNum:number, meal: Meal]}, createdAt }
+=> Exercise {name, muscles[string], sets, reps, rest, photo}
+=> Meal {name, ingredients[string], carb, fat, protein, calories}
+=> Review {userID, coachID, text, rating, createdAt }
